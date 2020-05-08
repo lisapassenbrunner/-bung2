@@ -1,0 +1,6 @@
+@mixin list-horizontal() {
+  display: flex;
+  li {
+    margin: 1em;
+  }
+}

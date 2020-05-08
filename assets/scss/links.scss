@@ -1,0 +1,37 @@
+a[href^="mailto:"] {
+  &::before {
+    content: '✉ ';
+  }
+}
+
+a[href^="tel:"] {
+  &::before {
+    content: '✆ ';
+  }
+}
+
+a[href^="https://"] {
+  &::before {
+    content: '→ ';
+  }
+}
+
+/* shorter version! */
+/*
+a[href*="//"]:not([href*="http://localhost/AFT/vorlage-ue2/public/"]) {
+  //external link styles, use :before or :after if you want!
+}
+*/
+
+a[href$=".pdf"], a[href$=".mp3"], a[href$=".zip"] {
+  &::before {
+    content: '← ';
+  }
+}
+
+a {
+  color: $light-green;
+  footer & {
+    color: #000000;
+  }
+}

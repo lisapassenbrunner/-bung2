@@ -1,0 +1,6 @@
+.mainmenu, .footermenu {
+  ul {
+    @include list-horizontal();
+  }
+
+}
